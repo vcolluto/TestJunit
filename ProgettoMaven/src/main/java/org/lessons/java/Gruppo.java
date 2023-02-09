@@ -32,11 +32,8 @@ public class Gruppo {
 			
 	}
 	
-	private boolean verificaNome(String n) {
-		if (n.substring(0,1).equals(n.substring(0,1).toUpperCase()))
-			return true;
-		else
-			return false;
+	private boolean verificaNome(String n) {	//verifica se il primo carattere è maiuscolo
+		return Character.isUpperCase(n.charAt(0));
 	}
 	
 	public ArrayList<Persona> getElencoPersone() {
